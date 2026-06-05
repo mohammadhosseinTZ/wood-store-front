@@ -1,0 +1,22 @@
+.ContainedButton{
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 15px 20px;
+    font-family: inherit;
+    text-decoration: none;
+    background: var(--color-primary);
+    color: black;
+    font-size: 22px;
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+    transition: .3s;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    justify-content: center;
+}
+.ContainedButton:hover{
+    background: var(--color-secondary);
+    color: #fff;
+}

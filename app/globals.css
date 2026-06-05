@@ -1,26 +1,68 @@
-@import "tailwindcss";
-
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-primary: #dfb98f;   
+  --color-secondary: #916738; 
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@font-face {
+  font-family: 'YekanBakh';
+  src: url("/fonts/IRANSansWeb_FaNum_.woff2") format('woff2'); /* اینجا فرمت را اضافه کنید */
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* این باعث می‌شود تا زمان لود شدن فونت، متن غیب نشود */
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "YekanBakh", Tahoma, Arial, sans-serif;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  max-width: 1100px;
+  width: 98%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body *{
+  box-sizing: border-box;
+}
+
+/* globals.css */
+
+@font-face {
+  font-family: 'Material Symbols Outlined';
+  font-style: normal;
+  font-weight: 100 700; /* چون فونت متغیر است، بازه وزن را مشخص می‌کنیم */
+  src: url('/fonts/material-symbols.woff2') format('woff2');
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  
+  /* تنظیمات اولیه (حالت Outline) */
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+  transition: font-variation-settings 0.2s ease;
+}
+
+/* افکت هاور برای پر شدن آیکن */
+.material-symbols-outlined:hover {
+  font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
 }
