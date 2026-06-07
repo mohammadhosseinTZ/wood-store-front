@@ -1,12 +1,15 @@
 import Header from "@/components/layout/Header";
 import HeroPage from "@/components/layout/Hero";
+import Cards from "@/features/index/Cards";
 
 export default function page() {
   return (
     <>
-    <Header/>
-    <HeroPage />
-    <div style={{ height:"2000px" , width:"100%" }}></div>
+      <Header />
+      <HeroPage />
+      <div className="container">
+        <Cards />
+      </div>
     </>
   )
 }

@@ -19,7 +19,7 @@
     background: #0d0d0dde;
   }
   .heroWrapper >div{
-    margin: auto;
+     margin: 20px auto 120px;
     text-align: center;
     width: 53%;
     z-index: 99;

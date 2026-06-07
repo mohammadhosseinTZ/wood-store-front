@@ -1,0 +1,12 @@
+.cards{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    margin-top: -75px;
+    z-index: 99999;
+    position: relative;
+}
+
+.cards >div{
+    width: calc(100%/4 - 20px);
+}
