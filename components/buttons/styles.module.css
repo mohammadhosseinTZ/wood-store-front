@@ -1,24 +1,33 @@
 .ContainedButton{
-    border: 1px solid #000;
-    border-radius: 5px;
-    padding: 15px 20px;
+    border-radius: 20px;
+    padding: 10px 10px;
     font-family: inherit;
     text-decoration: none;
-    background: var(--color-primary);
-    color: black;
-    font-size: 18px;
-    width: 50%;
+    font-size: 16px;
     display: inline-block;
     text-align: center;
     transition: .3s;
     display: flex;
     align-items: center;
     gap: 5px;
+    width: fit-content;
     justify-content: center;
 }
-.ContainedButton:hover{
+.ContainedButton:not(.themReverse){
+    background: var(--color-primary);
+    color: var(--color-secondary);
+}
+.ContainedButton.themReverse{
+    color: var(--color-primary);
     background: var(--color-secondary);
-    color: #fff;
+}
+.ContainedButton:not(.themReverse):hover{
+    background: var(--color-secondary);
+    color: var(--color-primary);
+}
+.ContainedButton.themReverse:hover{
+    color: var(--color-secondary);
+    background: var(--color-primary);
 }
 .outlinedButton{
     border: 1px solid #fff;

@@ -11,8 +11,8 @@ export default function HeroPage() {
                 <p>تامین کننده برترین برندهای ورق MDF با کیفیت تضمینی، تنوع رنگ بی‌نظیر و قیمت رقابتی برای پروژه‌های صنعتی و دکوراسیون داخلی.</p>
             </div>
             <div className={styles.products}>
-                <ContainedLink title="ارتباط با ما" href="call-us" icon={"call"}  />
-                <ContainedLink title="محصولات" href="products" className={styles.ContainedLinkCustom} icon={"shopping_bag"} />
+                <ContainedLink title="ارتباط با ما" href="call-us" icon={"call"} />
+                <ContainedLink title="محصولات" href="products" className={styles.ContainedLinkCustom} icon={"shopping_bag"} themReverse={true} />
             </div>
         </div>
     </section>

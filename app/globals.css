@@ -1,6 +1,8 @@
 :root {
-  --color-primary: #dfb98f;   
-  --color-secondary: #916738; 
+  --color-primary: #006199;   
+  --color-secondary: #F4EB6C; 
+  --color-accent: #8ACFF8; 
+  --color-muted: #FFD444; 
 }
 
 @font-face {
@@ -67,4 +69,48 @@ body *{
     'wght' 400,
     'GRAD' 0,
     'opsz' 24;
+}
+
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: black !important;
+}
+
+
+.swiper{
+  padding-bottom: 90px !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+  position: absolute;
+  top: unset !important;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.swiper-button-next >svg ,
+.swiper-button-prev >svg {
+  width: 68px !important;
+  background: var(--color-primary);
+  border-radius: 50%;
+  padding: 10px;
+}
+.swiper-button-next{
+  bottom: 11px !important;
+  left: 0px !important;
+}
+.swiper-button-prev{
+  bottom: 11px !important;
+  right: unset !important;
+  left: 53px !important;
+}
+.swiper-pagination-bullet {
+  width: 20px !important;
+  border-radius: 5px !important;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active{
+  background: var(--color-primary);
 }

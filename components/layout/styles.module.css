@@ -1,8 +1,10 @@
 .heroWrapper{
-    background-image: url("/images/hero5.jpeg");
+    /* background-image: url("/images/hero5.jpeg"); */
+    background-image: linear-gradient(to top, #8acff8, #74b9e6, #5ea4d4, #488fc2, #307bb0, #2472a8, #166aa1, #006199, #006199, #006199, #006199, #006199);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 550px;
+    height: 90vh;
+    min-height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,7 +18,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background: #0d0d0dde;
+    /* background: #0d0d0dde; */
   }
   .heroWrapper >div{
      margin: 20px auto 120px;
@@ -49,7 +51,7 @@
     gap:15px ;
   }
   .products >a{
-    width: 250px;
+    width: 180px;
     padding: 10px;
   }
 .ContainedLinkCustom{
@@ -76,7 +78,9 @@
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 999;
+  z-index: 99999999;
+  background-color: var(--color-primary);
+  border-bottom: 1px solid var(--color-accent);
 }
 .header >div{
   display: flex;
@@ -135,5 +139,83 @@
   color: #fff;
 }
 .scrolled{
-  background-color: #000 !important;
+  background-color: var(--color-primary) !important;
+}
+/* FOOTER */
+.footer{
+  background-color: #000;
+  border-radius: 40px 40px 0px 0px;
+  padding: 50px 0px;
+}
+.footer .body{
+  display: flex;
+  justify-content: space-between;
+ 
+}
+.footer .body .menuItems{
+  display: flex;
+} 
+.footer .body .menuItems ul{
+  padding: 0px 0px 0px 100px;
+  list-style-type: none;
+  margin: 0px;
+} 
+.footer .body .menuItems ul li:first-child{
+  color: var(--color-primary);
+  font-size: 20px;
+  padding-bottom: 8px;
+}
+.footer .body .menuItems ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+.footer .address > div{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.footer .address > div span:first-child{
+  color: var(--color-primary);
+}
+.footer .address > div:not(span:first-child){
+  color: #fff;
+}
+.footer .address .phone{
+  margin-top: 20px;
+}
+.footer .address .phone >div{
+  display: flex;
+  gap: 20px;
+}
+.footer .address .phone >div a{
+  color: #fff;
+  text-decoration: none;
+}
+.footer .separator{
+  height: 1px;
+  margin: 40px auto;
+  background-color: var(--color-primary);
+}
+.footer .socials{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.footer .socials > a div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  transition: .3s;
+}
+.footer .socials > a div img{
+  width: 22px;
+}
+.footer .socials > a div:hover{
+  background-color: var(--color-primary);
 }

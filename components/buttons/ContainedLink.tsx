@@ -6,10 +6,11 @@ interface Props {
     href: string
     className?: string
     icon?: string
+    themReverse?: boolean
 }
-export default function ContainedLink({ title, href, className, icon }: Props) {
+export default function ContainedLink({ title, href, className, icon, themReverse = false }: Props) {
 
-    const combinedClassName = `${styles.ContainedButton} ${className || ""}`.trim()
+    const combinedClassName = `${styles.ContainedButton} ${themReverse && styles.themReverse} ${className || ""}`.trim()
 
     return <Link href={href} className={combinedClassName}>{title}
         {icon && <span className="material-symbols-outlined">
