@@ -1,8 +1,8 @@
 :root {
-  --color-primary: #006199;   
-  --color-secondary: #F4EB6C; 
-  --color-accent: #8ACFF8; 
-  --color-muted: #FFD444; 
+  --color-primary: #4C4541;   
+  --color-secondary: #F2C46A; 
+  --color-accent: #AEAC78; 
+  --color-muted: #FCF0DA; 
 }
 
 @font-face {
@@ -12,12 +12,15 @@
   font-style: normal;
   font-display: swap; /* این باعث می‌شود تا زمان لود شدن فونت، متن غیب نشود */
 }
-
+.tagsContainer{
+  margin-bottom: 90px;
+}
 body {
   font-family: "YekanBakh", Tahoma, Arial, sans-serif;
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
+  background-color: var(--color-muted);
 }
 
 body *{

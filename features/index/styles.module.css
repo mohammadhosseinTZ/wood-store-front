@@ -14,14 +14,11 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
 }
-.products{
-    margin-bottom: 90px;
-}
+
 .banner{
     width: 100%;
     height: 400px;
     background-color: var(--color-muted);
-    margin-bottom: 90px;
     position: relative;
     display: flex;
     align-items: center;
@@ -47,6 +44,8 @@
     font-size: 24px;
 }
 
-.articles{
-    margin-bottom: 90px;
+/* CATEGORIES */
+.categoriesWrapper{
+    display: flex;
+    justify-content: space-between;
 }

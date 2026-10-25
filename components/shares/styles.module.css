@@ -141,3 +141,29 @@
 .article .info>a:hover{
     background-color: var(--color-primary);
 }
+/* CATEGORY */
+    .category{
+        box-shadow: 0px 0px 3px var(--color-primary);
+        padding: 15px;
+        border-radius: 10px;
+        background-color: var(--color-muted);
+        text-decoration: none;
+        width: calc(100%/5 - 10px);
+        transition: .3s;
+    }
+    .category:hover{
+        box-shadow: 0px 0px 3px var(--color-secondary);
+        transform: translateY(-5px);
+    }
+    .category>h5{
+        color: var(--color-primary);
+        font-weight: bold;
+        font-size: 15px;
+        margin-bottom: 5px;
+        margin-top: 0px;
+    }
+    .category>p{
+        color: var(--color-primary);
+        margin: 0px;
+        font-size: 13px;
+    }

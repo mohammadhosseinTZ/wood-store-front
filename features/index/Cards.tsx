@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 export default function Cards() {
     return (
-        <div className={styles.cards}>
+        <div className={`tagsContainer ${styles.cards}`}>
             <Card
                 icon={<Image alt='reasonable-price' src={"/icons/price.png"} width={60} height={60}  />}
                 title='کف قیمت'

@@ -4,7 +4,7 @@ import OutlinedLink from "@/components/buttons/OutlinedLink"
 
 export default function Banner() {
     return (
-        <div className={styles.banner}>
+        <div className={ `tagsContainer ${styles.banner}`}>
             <div className={styles.imageBanner}>
                 <div >
                     <Image src={"/images/mdfs.png"} alt="MDF" fill style={{ objectFit: "cover" }} />

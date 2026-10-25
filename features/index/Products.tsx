@@ -4,7 +4,7 @@ import styles from "./styles.module.css"
 
 export default function Products() {
     return (
-        <div className={styles.products}>
+        <div className={`tagsContainer ${styles.products}`}>
             <TitleWrapper title='محصولات' link='/' />
 
             <div className={styles.productsWrapper}>

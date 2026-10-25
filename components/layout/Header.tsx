@@ -10,7 +10,7 @@ export default function Header() {
 
     useEffect(() => {
         const handleScroll = () => {
-            setIsScrolled(window.scrollY > 100);
+            setIsScrolled(window.scrollY > 10);
         };
 
         window.addEventListener("scroll", handleScroll);
@@ -21,36 +21,42 @@ export default function Header() {
     }, []);
 
     return (
-        <header
-            className={`${styles.header}  ${isScrolled ? styles.scrolled : ""}`}
-        >
-            <div className="container">
-                <div className={styles.buttons}>
-
-
-                    <Link href="/">
-                        ۰۲۱ ۴۴۲۲۱۹۰۳
-                        <span className="material-symbols-outlined">
-                            call
-                        </span>
-
-                    </Link>
-                </div>
-
-                <ul className={styles.items}>
-                    <li><Link href="/">صفحه اصلی</Link></li>
-                    <li>
-   
-                            <SubHeader />
-                    </li>
-                    <li><Link href="/">درباره ما</Link></li>
-                    <li><Link href="/">تماس با ما</Link></li>
-                </ul>
-
-
-
-                <h6>مهدی تشکر</h6>
+        <>
+            <div className={styles.siteDesc}>
+                أخرین بروزرسانی قیمت‌ها:۱۴۰۵/۰۸/۰۲
             </div>
-        </header>
+
+            <header
+                className={`${styles.header}  ${isScrolled ? styles.scrolled : ""}`}
+            >
+                <div className="container">
+                    <div className={styles.buttons}>
+
+
+                        <Link href="/">
+                            ۰۲۱ ۴۴۲۲۱۹۰۳
+                            <span className="material-symbols-outlined">
+                                call
+                            </span>
+
+                        </Link>
+                    </div>
+
+                    <ul className={styles.items}>
+                        <li><Link href="/">صفحه اصلی</Link></li>
+                        <li>
+
+                            <SubHeader />
+                        </li>
+                        <li><Link href="/">درباره ما</Link></li>
+                        <li><Link href="/">تماس با ما</Link></li>
+                    </ul>
+
+
+
+                    <h6>مهدی تشکر</h6>
+                </div>
+            </header>
+        </>
     );
 }

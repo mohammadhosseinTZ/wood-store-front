@@ -12,7 +12,7 @@ import { Navigation, Pagination } from "swiper/modules";
 
 export default function Articles() {
     return (
-        <div className={styles.articles}>
+        <div className={`tagsContainer ${styles.articles}`}>
             <TitleWrapper title="مقالات" link="/" />
 
             <Swiper
