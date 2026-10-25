@@ -1,0 +1,29 @@
+.itemWrapper{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+.itemWrapper>a:first-child{
+    border-bottom: 1px dashed var(--color-secondary);
+    margin-bottom: 10px;
+    padding-bottom: 4px;
+}
+.itemWrapper *{
+    color: #000 !important;
+}
+.itemWrapper .link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+.itemWrapper .link span{
+    font-size: 14px;
+    margin-left: 5px;
+    transition: .3s;
+}
+.itemWrapper .link:hover span{
+    margin-left: 0px;
+}

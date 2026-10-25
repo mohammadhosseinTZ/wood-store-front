@@ -31,7 +31,7 @@
 }
 .outlinedButton{
     border: 1px solid #fff;
-    border-radius: 5px;
+    border-radius: var(--radius--card);
     padding: 10px 30px;
     font-family: inherit;
     text-decoration: none;

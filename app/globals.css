@@ -3,6 +3,8 @@
   --color-secondary: #F2C46A; 
   --color-accent: #AEAC78; 
   --color-muted: #FCF0DA; 
+
+  --radius--card:10px
 }
 
 @font-face {
@@ -112,7 +114,7 @@ body *{
 }
 .swiper-pagination-bullet {
   width: 20px !important;
-  border-radius: 5px !important;
+  border-radius: var(--radius--card) !important;
 }
 .swiper-pagination-bullet.swiper-pagination-bullet-active{
   background: var(--color-primary);
