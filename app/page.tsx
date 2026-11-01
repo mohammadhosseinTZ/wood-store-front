@@ -13,7 +13,7 @@ export default function page() {
 
       <Header />
       <HeroPage />
-      <div className="container">
+      {/* <div className="container">
         <Cards />
         <Categories />
         <Products />
@@ -22,7 +22,7 @@ export default function page() {
       <div className="container">
         <Articles />
       </div>
-      <Footer />
+      <Footer /> */}
     </>
   )
 }

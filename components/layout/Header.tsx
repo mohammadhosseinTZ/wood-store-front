@@ -3,10 +3,13 @@
 import Link from "next/link";
 import styles from "./styles.module.css";
 import { useEffect, useState } from "react";
-import SubHeader from "./components/Header/SubHeader";
+import MenuItems from "./components/Header/MenuItems"
+import HamburgerButton from "./components/Header/HamburgerButton";
+import { Box } from "@mui/material";
 
 export default function Header() {
     const [isScrolled, setIsScrolled] = useState(false);
+    const [open, setOpen] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -30,6 +33,11 @@ export default function Header() {
                 className={`${styles.header}  ${isScrolled ? styles.scrolled : ""}`}
             >
                 <div className="container">
+
+                    <HamburgerButton
+                        open={open}
+                        onClick={() => setOpen(!open)}
+                    />
                     <div className={styles.buttons}>
 
 
@@ -41,18 +49,9 @@ export default function Header() {
 
                         </Link>
                     </div>
-
-                    <ul className={styles.items}>
-                        <li><Link href="/">صفحه اصلی</Link></li>
-                        <li>
-
-                            <SubHeader />
-                        </li>
-                        <li><Link href="/">درباره ما</Link></li>
-                        <li><Link href="/">تماس با ما</Link></li>
-                    </ul>
-
-
+                    <Box className={styles.menuItems}>
+                        <MenuItems />
+                    </Box>
 
                     <h6>مهدی تشکر</h6>
                 </div>

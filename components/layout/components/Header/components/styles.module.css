@@ -12,6 +12,7 @@
 .itemWrapper *{
     color: #000 !important;
 }
+
 .itemWrapper .link{
     display: flex;
     justify-content: space-between;
@@ -26,4 +27,9 @@
 }
 .itemWrapper .link:hover span{
     margin-left: 0px;
+}
+@media screen and (max-width:1400px) {
+        .itemWrapper{
+            padding:10px 0px !important;
+        }
 }

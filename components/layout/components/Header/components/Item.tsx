@@ -7,7 +7,7 @@ export default function Item({ item }: {
         links: { title: string, link: string }[],
     }
 }) {
-    return <div className={styles.itemWrapper}>
+    return <div className={`${styles.itemWrapper}`}>
         <Link href={"/"}>{item.title}</Link>
 
         {item.links.map((el, i) => {

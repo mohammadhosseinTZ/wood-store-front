@@ -1,6 +1,6 @@
 .heroWrapper{
-    /* background-image: url("/images/hero5.jpeg"); */
-    background-image: linear-gradient(to right top, #4c4541, #78604e, #a37f59, #cca062, #f2c46a);
+    background-image: url("/images/hero5.jpeg");
+    /* background-image: linear-gradient(to right top, #4c4541, #78604e, #a37f59, #cca062, #f2c46a); */
     background-size: cover;
     background-repeat: no-repeat;
     height: 90vh;
@@ -18,7 +18,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    /* background: #0d0d0dde; */
+    background: #0d0d0dde;
   }
   .heroWrapper >div{
      margin: 20px auto 120px;
@@ -80,7 +80,7 @@
   left: 50%;
   transform: translateX(-50%);
   z-index: 99999999;
-  background-color: var(--color-primary);
+  background-color: var(--color-secondary);
   border-bottom: 1px solid var(--color-muted);
 }
 .header.scrolled{
@@ -99,9 +99,9 @@
   list-style-type: none;
 }
 .header ul a {
-  color: #fff;
   text-decoration: none;
   position: relative;
+  color: #000;
 }
 .header ul a:hover::after{
   content: '';
@@ -118,7 +118,7 @@
 }
 .header h6{
   margin: 0;
-  color: #fff;
+  color: #000;
   font-size: 16px;
 
 }
@@ -128,17 +128,48 @@
   align-items: center;
   text-decoration: none;
   gap: 10px;
-  color: #fff;  
+  color: #000;  
   transition: .3s;
 }
 .siteDesc{
   height: 30px;
-  background-color: var(--color-secondary);
+  background-color: var(--color-primary);
+  color: #fff;
   text-align: center;
 }
 
 .scrolled{
-  background-color: var(--color-primary) !important;
+  background-color: var(--color-secondary) !important;
+}
+
+@media screen and (max-width: 1400px) {
+  .buttons ,
+  .menuItems,
+   .items{
+   display: none !important;
+ } 
+
+  .header{
+    padding: 20px 10px;
+  }
+
+  .header ul{
+    align-items: flex-start;
+    gap: 0px;
+    padding: 0px;
+  }
+  .header ul >li {
+    width: 100%;
+  }
+  .header ul >li >a{
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0px;
+  }
+  .header ul >li >div.dropdownContainer{
+    width: 100%;
+    padding: 10px 0px;
+  }
 }
 /* FOOTER */
 .footer{
