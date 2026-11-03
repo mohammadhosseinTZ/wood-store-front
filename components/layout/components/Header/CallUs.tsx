@@ -8,7 +8,7 @@ export default function CallUs() {
         </p>
         <Link href={"/"} className={styles.link}>
             مشاوره رایگان
-            <span className="material-symbols-outlined">
+            <span className="material-symbols-rounded">
                 arrow_back_ios
             </span>
         </Link>

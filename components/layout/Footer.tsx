@@ -22,7 +22,7 @@ export default function Footer() {
                 </div>
                 <div className={styles.address}>
                     <div>
-                        <span className="material-symbols-outlined">
+                        <span className="material-symbols-rounded">
                             person_pin_circle
                         </span>
                         <address>
@@ -30,7 +30,7 @@ export default function Footer() {
                         </address>
                     </div>
                     <div className={styles.phone}>
-                        <span className="material-symbols-outlined">
+                        <span className="material-symbols-rounded">
                             call
                         </span>
                         <div>

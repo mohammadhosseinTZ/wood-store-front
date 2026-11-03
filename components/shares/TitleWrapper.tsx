@@ -9,7 +9,7 @@ export default function TitleWrapper({ title, link }: Props) {
     return (
         <div className={styles.titleWrapper}>
             <span>{title}</span>
-            {link && <Link href={link}>مشاهده بیشتر <span className="material-symbols-outlined">
+            {link && <Link href={link}>مشاهده بیشتر <span className="material-symbols-rounded">
                 keyboard_arrow_left
             </span></Link>}
         </div>

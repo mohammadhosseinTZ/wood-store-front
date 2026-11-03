@@ -6,7 +6,7 @@ export default function SubHeader() {
     return <div className={styles.dropdownContainer}>
         <div className={styles.dropdown}>
             محصولات
-            <span className="material-symbols-outlined">
+            <span className="material-symbols-rounded">
                 keyboard_arrow_down
             </span>
         </div>

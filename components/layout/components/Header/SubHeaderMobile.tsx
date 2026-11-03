@@ -18,7 +18,7 @@ export default function SubHeaderMobile() {
         >
             <AccordionSummary
                 expandIcon={
-                    <span className="material-symbols-outlined">
+                    <span className="material-symbols-rounded">
                         keyboard_arrow_down
                     </span>
                 }

@@ -6,12 +6,14 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "icons": "tsx scripts/downloadIcons.ts"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
     "@mui/material": "^9.5.0",
+    "fs-extra": "^11.4.1",
     "next": "16.2.7",
     "react": "19.2.4",
     "react-dom": "19.2.4",

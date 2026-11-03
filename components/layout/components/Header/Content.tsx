@@ -68,7 +68,7 @@ export default function Content() {
         })}
             <div className={styles.seeMore}>
                 <Link href={"/"}>مشاهده بیشتر</Link>
-                <span className="material-symbols-outlined">
+                <span className="material-symbols-rounded">
                     arrow_back
                 </span>
             </div>

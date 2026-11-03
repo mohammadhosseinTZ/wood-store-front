@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "Material Symbols Rounded";
+  font-style: normal;
+  font-weight: 100 700;
+  src: url("../fonts/MaterialSymbol/MaterialSymbolsRoundOutput.woff2") format("woff2");
+  font-display: block;
+}
+
+/* .material-symbols-rounded::before {
+  content: "⟳";
+  font-family: system-ui, -apple-system, sans-serif;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: inherit;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+@supports (font-variation-settings: normal) {
+  .material-symbols-rounded::before {
+    opacity: 0;
+  }
+} */

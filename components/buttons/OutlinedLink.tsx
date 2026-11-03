@@ -12,7 +12,7 @@ export default function OutlinedLink({ title, href, className, icon }: Props) {
     const outlinedClassName = `${styles.outlinedButton} ${className || ""}`.trim()
 
     return <Link href={href} className={outlinedClassName}>{title}
-        {icon && <span className="material-symbols-outlined">
+        {icon && <span className="material-symbols-rounded">
             {icon}
         </span>}
     </Link>

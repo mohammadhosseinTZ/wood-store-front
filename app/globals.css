@@ -44,7 +44,7 @@ body *{
   src: url('/fonts/material-symbols.woff2') format('woff2');
 }
 
-.material-symbols-outlined {
+.material-symbols-rounded {
   font-family: 'Material Symbols Outlined';
   font-weight: normal;
   font-style: normal;
@@ -68,7 +68,7 @@ body *{
 }
 
 /* افکت هاور برای پر شدن آیکن */
-.material-symbols-outlined:hover {
+.material-symbols-rounded:hover {
   font-variation-settings:
     'FILL' 1,
     'wght' 400,

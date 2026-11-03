@@ -43,7 +43,7 @@ export default function Header() {
 
                         <Link href="/">
                             ۰۲۱ ۴۴۲۲۱۹۰۳
-                            <span className="material-symbols-outlined">
+                            <span className="material-symbols-rounded">
                                 call
                             </span>
 

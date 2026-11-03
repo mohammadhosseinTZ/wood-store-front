@@ -13,7 +13,7 @@ export default function ContainedLink({ title, href, className, icon, themRevers
     const combinedClassName = `${styles.ContainedButton} ${themReverse && styles.themReverse} ${className || ""}`.trim()
 
     return <Link href={href} className={combinedClassName}>{title}
-        {icon && <span className="material-symbols-outlined">
+        {icon && <span className="material-symbols-rounded">
             {icon}
         </span>}
     </Link>

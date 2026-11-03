@@ -13,7 +13,7 @@ export default function Item({ item }: {
         {item.links.map((el, i) => {
             return <Link href={el.link} key={i} className={styles.link}>
                 {el.title}
-                <span className="material-symbols-outlined">
+                <span className="material-symbols-rounded">
                     arrow_back
                 </span>
             </Link>
