@@ -31,6 +31,9 @@ select,
   font-family: var(--font-family) !important;
 }
 
+.pagesWrapper{
+  margin: 120px 0px;
+}
 
 .tagsContainer{
   margin-bottom: 90px;

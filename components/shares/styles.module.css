@@ -224,3 +224,21 @@
         margin-bottom: 10px;
     }
   }
+  /* TitlePageWrapperTitle */
+  .TitlePageWrapperTitle{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  .customLine {
+    width: 92px;
+    height: 2px;
+    background: linear-gradient(to right, #4C4534, #C8C2B5);
+    transform: rotate(180deg);
+}
+
+@media (min-width: 1024px) {
+    .customLine {
+        width: 100px;
+    }
+}

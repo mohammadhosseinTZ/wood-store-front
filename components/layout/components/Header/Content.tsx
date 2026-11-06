@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Item from "./components/Item"
 import styles from "./styles.module.css"
+import Image from "next/image";
 
 export default function Content() {
 
@@ -74,7 +75,12 @@ export default function Content() {
             </div>
         </div>
         <div className={styles.banner}>
-            content
+            <Image
+                src="/images/products.webp"
+                alt="محصولات"
+                fill
+                style={{ objectFit: "cover" }}
+            />
         </div>
     </div>
 }

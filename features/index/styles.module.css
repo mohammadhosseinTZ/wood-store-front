@@ -60,6 +60,7 @@ background-image: url("https://www.transparenttextures.com/patterns/black-felt.p
 }
 
 /* CATEGORIES */
+
 .categoriesWrapper{
     display: flex;
     justify-content: space-between;
@@ -78,7 +79,6 @@ background-image: url("https://www.transparenttextures.com/patterns/black-felt.p
     }
 }
 /* products */
-
 .productsSwiper {
     width: 100%;
 }

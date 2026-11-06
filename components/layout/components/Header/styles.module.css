@@ -60,7 +60,11 @@
   .seeMore a{
     color: #000 !important;
   }
-  
+  .content >.banner{
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--radius--card);
+  }
  .dropdownContainer .content>div:last-child{
     width: calc(30% - 10px);
   }

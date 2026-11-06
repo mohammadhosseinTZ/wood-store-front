@@ -1,0 +1,10 @@
+.pageDesc h1{
+    color: var(--color-primary);
+}
+.pageDesc p{
+    color: var(--color-primary);
+}
+
+.pageDesc{
+    margin-bottom: 50px;
+}

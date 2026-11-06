@@ -61,7 +61,8 @@ export default function Products() {
     const [swiper, setSwiper] = useState<SwiperType | null>(null);
 
     return (
-        <div className={`tagsContainer ${styles.products}`}>
+
+        <div className={`container tagsContainer ${styles.products}`}>
 
             <Box className={styles.header}>
                 <TitleWrapper title="محصولات" link="/" />
@@ -101,6 +102,7 @@ export default function Products() {
                     </SwiperSlide>
                 ))}
             </Swiper>
+
 
         </div>
     );
