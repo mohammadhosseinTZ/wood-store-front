@@ -14,6 +14,10 @@ export default function HeroPage() {
                 <ContainedLink title="ارتباط با ما" href="call-us" icon={"call"} />
                 <ContainedLink title="محصولات" href="products" className={styles.ContainedLinkCustom} icon={"shopping_bag"} themReverse={true} />
             </div>
+            <div className={styles.products}>
+                <ContainedLink title="مقالات" href="products" className={styles.ContainedLinkCustom} icon={"shopping_bag"} themReverse={true} />
+                <ContainedLink title="قیمت روز" href="call-us" icon={"attach_money"} />
+            </div>
         </div>
     </section>
 }

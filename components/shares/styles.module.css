@@ -17,16 +17,45 @@
 .card >span{
     font-size: 30px;
 }
-.card >h6{
+.card h6{
     font-size: 16px;
     margin: 20px 0px 5px;
 }
-.card >p{
+.card p{
     font-size: 14px;
     text-align: center;
     margin: 10px 0px 5px;
 }
-
+.card >div{
+    width: 100%;
+    text-align: center;
+}
+@media screen and (max-width:1400px) {
+    .card{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        align-items: center;
+        width: calc(100%/2 - 5px);
+        margin-bottom: 10px;
+    }
+    .card>div{
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+    .card img{
+        width: 40px;
+        height: 40px;
+    }
+    .card h6{
+        margin: 0px;
+        font-size: 14px;
+    }
+    .card p{
+        font-size: 13px;
+    }
+}
 .titleWrapper{
     display: flex;
     align-items: center;
@@ -49,6 +78,11 @@
 }
 .titleWrapper>a:hover{
     color: var(--color-primary);
+}
+@media screen and (max-width:1400px) {
+    .titleWrapper>span{
+        font-size: 20px;
+    }
 }
 .products .imageWrapper{
     width: 100%;
@@ -183,4 +217,10 @@
   
   .shadow:not(.noShadow) {
     box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.1);
+  }
+  @media screen and (max-width:1400px) {
+    .category{
+        width: calc(100%/2 - 10px);
+        margin-bottom: 10px;
+    }
   }

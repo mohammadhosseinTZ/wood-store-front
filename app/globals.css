@@ -1,12 +1,13 @@
 :root {
-  --color-primary: #4C4541;   
-  --color-secondary: #F2C46A; 
-  --color-accent: #AEAC78; 
-  --color-muted: #FCF0DA; 
+  --color-primary: #4C4541;
+  --color-secondary: #F2C46A;
+  --color-accent: #AEAC78;
+  --color-muted: #FCF0DA;
 
-  --radius--card:10px
+  --radius--card: 10px;
+
+  --font-family: "YekanBakh", Tahoma, Arial, sans-serif;
 }
-
 @font-face {
   font-family: 'YekanBakh';
   src: url("/fonts/IRANSansWeb_FaNum_.woff2") format('woff2'); /* اینجا فرمت را اضافه کنید */
@@ -14,15 +15,37 @@
   font-style: normal;
   font-display: swap; /* این باعث می‌شود تا زمان لود شدن فونت، متن غیب نشود */
 }
+
+
+
+
+
+body,
+button,
+input,
+textarea,
+select,
+.MuiTypography-root,
+.MuiButtonBase-root,
+.MuiInputBase-root {
+  font-family: var(--font-family) !important;
+}
+
+
 .tagsContainer{
   margin-bottom: 90px;
+}
+@media screen and (max-width:1400px) {
+  .tagsContainer{
+    margin-bottom: 40px;
+  }
 }
 body {
   font-family: "YekanBakh", Tahoma, Arial, sans-serif;
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
-  background-color: var(--color-muted);
+  background-color: var(--color-muted) !important;
 }
 
 body *{

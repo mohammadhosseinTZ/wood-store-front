@@ -53,13 +53,67 @@ function DynamicTable<T extends { id: number | string }>({
           ?
           <Paper
             elevation={0}
+
             sx={{
-              width: "100%",
-              overflow: "hidden",
-              marginTop: "20px",
-              marginBottom: "50px",
-              boxShadow: "none",
+              boxShadow: "none !important",
+              borderRadius: "var(--radius--card)",
+              outline: "none",
+              background:"transparent",
+              border: "none",
+              overflow: "auto",
+              fontFamily: "var(--font-family)",
+
+              "& *:not(.material-symbols-rounded):not(.material-symbols-outlined):not(.material-symbols-sharp)": {
+                fontFamily: "var(--font-family) !important",
+              },
+
+              "& .MuiDataGrid-columnHeaders": {
+                backgroundColor: "var(--color-primary)",
+                color: "var(--color-primary)",
+                borderBottom: "none",
+                fontWeight: 700,
+              },
+
+              "& .MuiDataGrid-columnHeaderTitle": {
+                fontWeight: 700,
+              },
+
+              "& .MuiDataGrid-row.even-row": {
+                backgroundColor: "#F2C46A",
+              },
+
+
+
+              "& .MuiDataGrid-row:hover": {
+                backgroundColor: "var(--color-muted)",
+              },
+
+              "& .MuiDataGrid-cell": {
+                borderBottom: "1px solid var(--color-muted)",
+                fontSize: "13px",
+                color: "var(--color-primary)",
+              },
+
+              "& .MuiDataGrid-columnSeparator": {
+                color: "rgba(255,255,255,0.2)",
+              },
+
+
+              "& .MuiDataGrid-columnHeader:focus, & .MuiDataGrid-cell:focus": {
+                outline: "none",
+              },
+
+              "& .MuiDataGrid-row.Mui-selected": {
+                backgroundColor: "#F2C46A",
+              },
+
+
+
+              "&>div": {
+                minWidth: "1000px",
+              },
             }}
+
           >
             <TableContainer  >
 

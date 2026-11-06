@@ -44,15 +44,36 @@
     margin: 15px 0px 50px;
     font-size: 20px;
   }
-  .products{
-    width: 100%;
+  .heroWrapper .products{
     display: flex;
-    justify-content: center;
-    gap:15px ;
+    gap: 20px;
+
+  margin-bottom: 20px;
   }
   .products >a{
     width: 180px;
     padding: 10px;
+  }
+  @media screen and (max-width: 1400px) {
+    .hero{
+      padding-top: 190px;
+    }
+    .hero>h1{
+      font-size: 24px;
+      margin: 35px 0px;
+    }
+    .heroWrapper >div{
+      width: 90%;
+    }
+
+  .hero>p ,
+  .hero>h5{ 
+    line-height: 1.8;
+  font-size: 18px;
+  }
+  .heroWrapper{
+    min-height: 650px;
+  }
   }
 .ContainedLinkCustom{
     background: var(--color-secondary);

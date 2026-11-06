@@ -7,8 +7,10 @@ type Props = {
 export default function Card({ title, desc, icon }: Props) {
     return (
         <div className={styles.card}>
-            {icon}
-            <h6>{title}</h6>
+            <div>
+                {icon}
+                <h6>{title}</h6>
+            </div>
             <p>{desc}</p>
         </div>
     )

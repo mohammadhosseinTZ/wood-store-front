@@ -17,7 +17,7 @@ export default function Articles() {
 
             <Swiper
                 modules={[Navigation, Pagination]}
-                navigation
+                // navigation
                 pagination={
                     {
                         clickable: true
@@ -27,7 +27,7 @@ export default function Articles() {
                 slidesPerView={5}
                 breakpoints={{
                     0: {
-                        slidesPerView: 1,
+                        slidesPerView: 1.3,
                     },
                     768: {
                         slidesPerView: 2,
