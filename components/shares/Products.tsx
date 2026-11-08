@@ -3,7 +3,7 @@
 
 import { useState } from "react";
 
-import Product from "@/components/shares/Product";
+import Product from "@/components/shares/components/Product";
 import TitleWrapper from "@/components/shares/TitleWrapper";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -19,45 +19,17 @@ import "swiper/css";
 import styles from "./styles.module.css";
 import { Navigation } from "swiper/modules";
 
-const products = [
-    {
-        id: 1,
-        image: "/images/hero3.jpg",
-        title: "MDF ساده",
-        desc: "تخته چندلایی (پلای وود) روسی با برند سوِزا Sveza ابعاد 122 در 244 سانتی‌متر، ضخامت 3 تا 30 میلی‌متر",
-        path: "/",
-    },
-    {
-        id: 2,
-        image: "/images/hero3.jpg",
-        title: "MDF هایگلاس",
-        desc: "تخته چندلایی با کیفیت بالا و تنوع رنگ و طرح مناسب برای کابینت و دکوراسیون داخلی",
-        path: "/",
-    },
-    {
-        id: 3,
-        image: "/images/hero3.jpg",
-        title: "MDF ملامینه",
-        desc: "ورق MDF ملامینه در ابعاد و ضخامت‌های مختلف مناسب برای مصارف صنعتی و خانگی",
-        path: "/",
-    },
-    {
-        id: 4,
-        image: "/images/hero3.jpg",
-        title: "نئوپان",
-        desc: "انواع ورق نئوپان با کیفیت و ابعاد متنوع",
-        path: "/",
-    },
-    {
-        id: 5,
-        image: "/images/hero3.jpg",
-        title: "پلای وود",
-        desc: "تخته چندلایی روسی با برندهای معتبر و کیفیت بالا",
-        path: "/",
-    },
-];
 
-export default function Products() {
+
+export default function Products({ title = "محصولات", products }: {
+    title?: string, products: {
+        id: number,
+        image: string,
+        title: string,
+        desc: string,
+        path: string
+    }[]
+}) {
     const [swiper, setSwiper] = useState<SwiperType | null>(null);
 
     return (
@@ -65,7 +37,7 @@ export default function Products() {
         <div className={`container tagsContainer ${styles.products}`}>
 
             <Box className={styles.header}>
-                <TitleWrapper title="محصولات" link="/" />
+                <TitleWrapper title={title} link="/" />
             </Box>
 
             <Swiper

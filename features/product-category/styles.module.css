@@ -1,0 +1,21 @@
+/* products */
+.productsSwiper {
+    width: 100%;
+}
+
+.productsSwiper :global(.swiper-wrapper) {
+    align-items: stretch;
+}
+
+.productsSwiper :global(.swiper-slide) {
+    height: auto;
+    display: flex;
+}
+
+.productsSwiper :global(.swiper-slide > *) {
+    width: 100%;
+    height: 100%;
+}
+.navButton{
+    color: red;
+}

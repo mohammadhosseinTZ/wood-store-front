@@ -26,7 +26,7 @@ export default function Header() {
     return (
         <>
             <div className={styles.siteDesc}>
-                أخرین بروزرسانی قیمت‌ها:۱۴۰۵/۰۸/۰۲
+                آخرین بروزرسانی قیمت‌ها:۱۴۰۵/۰۸/۰۲
             </div>
 
             <header

@@ -3,7 +3,6 @@
 import { useState } from "react";
 import DynamicTable from "@/components/shares/table/DynamicTable";
 import { GridColDef } from "@mui/x-data-grid";
-
 const products = [
     {
         id: 1,
@@ -96,13 +95,16 @@ const columns: GridColDef[] = [
 export default function TableOfCategories() {
     const [page, setPage] = useState(1);
 
-    return (
+    return (<>
         <DynamicTable
             columns={columns}
             rows={products}
             paginateCount={Math.ceil(products.length / 10)}
             page={page}
             setPage={setPage as any}
-        />
+            />
+
+            
+            </>
     );
 }
