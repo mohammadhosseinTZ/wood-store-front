@@ -1,7 +1,12 @@
 
-import ProductGallery from "@/features/product/ProductGallery";
-import ProductInfo from "@/features/product/ProductInfo";
 import styles from "./styles.module.css"
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
+import PageDesc from "@/components/shares/PageDesc";
+import TableOfCategories from "@/features/product-category/TableOfCategories";
+import TitleContentWrapper from "@/components/shares/TitleContentWrapper";
+import ProductLayout from "@/components/shares/products/ProductLayout";
+
 
 const product = {
     title: "ام دی اف ساده",
@@ -12,10 +17,10 @@ const product = {
     available: true,
     delivery: "ارسال توسط مرجع تخصصی فرآورده‌های چوبی.",
     images: [
-        "/images/products/mdf-1.webp",
-        "/images/products/mdf-2.webp",
-        "/images/products/mdf-3.webp",
-        "/images/products/mdf-4.webp",
+        "/images/hero4.jpeg",
+        "/images/hero5.jpeg",
+        "/images/hero4.jpeg",
+        "/images/hero4.jpeg",
     ],
     specifications: [
         { label: "نوع محصول", value: "MDF ساده" },
@@ -25,13 +30,36 @@ const product = {
     ],
 };
 
+const bread_crumbs = {
+    lastItem: "دسته‌بندی محصولات",
+    firstItem: "صفحه اصلی",
+    links: [
+        // { title: "اطلاعات پایه", href: "/" },
+    ],
+};
+
 export default function ProductPage() {
     return (
-        <main className={styles.container}>
-            <section className={styles.productLayout}>
-                <ProductGallery images={product.images} />
-                <ProductInfo product={product} />
+        <main >
+            <Header />
+
+            <section className={` container pagesWrapper ${styles.productLayoutWrapper} `}>
+
+                <PageDesc bread_crumbs={bread_crumbs} desc="   مشاهده انواع محصولات چوب روسی و بررسی قیمت روز
+                        آن‌ها در این صفحه." titlePageWrapper="دسته‌بندی چوب روسی" />
+
+         
+
+                <ProductLayout product={product}/>
+
+                <div className="tagsContainer">
+                <TitleContentWrapper title="قیمت روز" />
+                    <TableOfCategories />
+                </div>
             </section>
+
+            <Footer />
+
         </main>
     );
 }

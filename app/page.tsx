@@ -10,8 +10,6 @@ import ListPrices from "@/features/index/LIstPrices";
 import Products from "@/components/shares/Products";
 
 
-
-
 export default function HomePage() {
 
   const categories = [

@@ -28,14 +28,22 @@ export default function BreadCrumbs_({ links }: { links: TBreadCrumbs }) {
             />
           }
           aria-label="breadcrumb"
-          sx={{ fontSize: "15px" }}
+          sx={{
+            fontSize: {
+              "xs": "12px",
+              "lg": "15px"
+            }
+          }}
         >
           <Typography
             component={"span"}
             sx={{
               color: "var(--color-primary)",
               fontWeight: "400",
-              fontSize: "15px",
+              fontSize: {
+                "xs": "12px",
+                "lg": "15px"
+              },
             }}
           >
             {links.firstItem}
@@ -48,13 +56,21 @@ export default function BreadCrumbs_({ links }: { links: TBreadCrumbs }) {
               sx={{
                 color: "var(--color-primary)",
                 fontWeight: "400",
-                fontSize: "15px",
+                fontSize: {
+                  "xs": "12px",
+                  "lg": "15px"
+                },
               }}
             >
               {el.title}
             </Link>
           ))}
-          <Typography key="3" sx={{ color: "var( --Blue-500)" }}>
+          <Typography key="3" sx={{
+            color: "var( --Blue-500)", fontSize: {
+              "xs": "12px",
+              "lg": "15px"
+            }
+          }}>
             {links.lastItem}
           </Typography>
         </Breadcrumbs>

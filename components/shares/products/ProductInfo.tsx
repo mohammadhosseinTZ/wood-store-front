@@ -4,38 +4,28 @@ import styles from "./styles.module.css";
 export default function ProductInfo({ product }) {
     return (
         <div className={styles.info}>
-            <div className={styles.productHeading}>
-                <span className={styles.category}>
-                    {product.category}
-                </span>
-
-                <h1>{product.title}</h1>
-
-                <p className={styles.description}>
-                    {product.description}
-                </p>
-            </div>
+     
 
             <div className={styles.sellerCard}>
                 <h3>فروشنده</h3>
 
                 <div className={styles.infoRow}>
-                    <span className="material-symbols-outlined">
-                        storefront
+                    <span className="material-symbols-rounded">
+                        language
                     </span>
                     <span>{product.seller}</span>
                 </div>
 
                 <div className={styles.infoRow}>
-                    <span className="material-symbols-outlined">
+                    <span className="material-symbols-rounded">
                         verified_user
                     </span>
                     <span>ضمانت اصالت کالا</span>
                 </div>
 
                 <div className={styles.infoRow}>
-                    <span className="material-symbols-outlined stockIcon">
-                        inventory_2
+                    <span className="material-symbols-rounded stockIcon">
+                    fact_check
                     </span>
                     <span>
                         {product.available ? "موجود در انبار" : "ناموجود"}
@@ -43,7 +33,7 @@ export default function ProductInfo({ product }) {
                 </div>
 
                 <div className={styles.delivery}>
-                    <span className="material-symbols-outlined">
+                    <span className="material-symbols-rounded">
                         local_shipping
                     </span>
                     <p>{product.delivery}</p>

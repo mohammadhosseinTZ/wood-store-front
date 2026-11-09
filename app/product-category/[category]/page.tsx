@@ -6,6 +6,7 @@ import TitlePageWrapper from "@/components/shares/TitlePageWrapper";
 import Footer from "@/components/layout/Footer";
 import Products from "@/components/shares/Products";
 import Categories from "@/components/shares/Categories";
+import PageDesc from "@/components/shares/PageDesc";
 
 export default function ProductCategory() {
 
@@ -89,18 +90,11 @@ export default function ProductCategory() {
 
         <div className="container pagesWrapper">
             <div>
-                <BreadCrumbs_ links={bread_crumbs} />
 
-                <div className={styles.pageDesc}>
 
-                    <TitlePageWrapper title="دسته‌بندی چوب روسی" />
 
-                    <p>
-                        مشاهده انواع محصولات چوب روسی و بررسی قیمت روز
-                        آن‌ها در این صفحه.
-                    </p>
-
-                </div>
+                <PageDesc bread_crumbs={bread_crumbs} desc="   مشاهده انواع محصولات چوب روسی و بررسی قیمت روز
+                        آن‌ها در این صفحه." titlePageWrapper="دسته‌بندی چوب روسی" />
 
 
 
