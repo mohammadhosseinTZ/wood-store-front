@@ -13,7 +13,7 @@ export default function Footer() {
                         <li><Link href={"/"}>محصولات</Link></li>
                         <li><Link href={"/"}>مقالات</Link></li>
                         <li><Link href={"/"}>درباره ما</Link></li>
-                        <li><Link href={"/"}>تماس با ما</Link></li>
+                        <li><Link href={"/contact-us"}>تماس با ما</Link></li>
                     </ul>
                     <ul>
                         <li>دسته بندی</li>

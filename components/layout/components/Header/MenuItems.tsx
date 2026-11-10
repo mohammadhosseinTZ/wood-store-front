@@ -11,6 +11,6 @@ export default function MenuItems({ mobile }: { mobile?: boolean }) {
             {mobile ? <SubHeaderMobile /> : <SubHeader />}
         </li>
         <li><Link href="/">درباره ما</Link></li>
-        <li><Link href="/">تماس با ما</Link></li>
+        <li><Link href="/contact-us">تماس با ما</Link></li>
     </ul>
 }

@@ -1,0 +1,114 @@
+.bannerContactUsWrapper{
+    width: 100%;
+    height: 520px;
+    background-image: url("/images/wood-banner-fullscreen.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: var(--radius--card);
+    position: relative;
+    overflow: hidden;
+}
+.bannerContactUsWrapper .shadow{
+    content: '';
+    box-shadow: inset 700px 0px 120px 120px #000000c2;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+}
+.bannerContactUsWrapper >.content{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    margin-right: auto;
+    color: #fff;
+    z-index: 9999;
+    display: block;
+    position: relative;
+    padding: 20px 50px;
+    text-align:center ;
+}
+.bannerContactUsWrapper >.content h1{
+    font-size: 35px;
+}
+.bannerContactUsWrapper >.content p{
+    font-size: 20px;
+    line-height: 1.9;
+    text-align: justify;
+}
+.bannerContactUsWrapper .call{
+    width: 300px;
+    margin: auto;
+    padding: 15px 20px;
+
+}
+@media screen and (max-width:1400px) {
+    .bannerContactUsWrapper{
+        height: 500px;
+    }
+    .bannerContactUsWrapper >.content{
+        width: 100%;
+    }
+    .bannerContactUsWrapper >.content h1{
+        font-size: 20px;
+    }
+    .bannerContactUsWrapper >.content p{
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .bannerContactUsWrapper .call{
+        width: 100%;
+        padding: 10px;
+    }
+}
+/* aboutUsWrapper */
+.aboutUsWrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: var(--radius--card);
+    background-color: var(  --color-secondary);
+}
+.aboutUsWrapper .map{
+    width: calc(100%/2 - 20px);
+    border-radius: var(--radius--card);
+    overflow: hidden;
+}
+.aboutUsWrapper .map >iframe{
+    height: 100%;
+}
+.aboutUsWrapper .aboutUs{
+    width: calc(100%/2 - 20px);
+}
+.aboutUsWrapper .aboutUs *{
+    color: var(--color-primary);
+}
+.aboutUsWrapper .aboutUs .bold{
+    font-weight: bold;
+    font-size: 16px;
+}
+.aboutUsWrapper .aboutUs .bold.title{
+    margin-top: 20px;
+}
+.aboutUsWrapper .aboutUs div:not(.bold){
+    font-size: 16px;
+    font-weight: 300;
+}
+@media screen and (max-width:1400px){
+
+    .aboutUsWrapper{
+        flex-direction: column-reverse;
+    }
+    .aboutUsWrapper .map{
+        height: 300px;
+    }
+    .aboutUsWrapper .aboutUs{
+        margin-bottom: 20px;
+    }
+    .aboutUsWrapper .map ,.aboutUsWrapper .aboutUs{
+        width: 100%;
+    }
+}
