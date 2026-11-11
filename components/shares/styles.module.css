@@ -191,8 +191,22 @@
 .categoriesWrapper{
     display: flex;
     justify-content: space-between;
+    position: relative;
+}
+.categoriesWrapper >.bg{
+    background-color: #4c4541;
+background-image: url("https://www.transparenttextures.com/patterns/3px-tile.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+position: absolute;
+width: 100%;
+height: 86%;
+z-index: -1;
+bottom: -49px;
 }
 @media screen and (max-width:1400px) {
+    .categoriesWrapper >.bg{
+bottom: -11px;
+    }
     .cards{
         margin: 40px 0px;
         display: flex;

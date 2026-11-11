@@ -2,6 +2,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import styles from "./styles.module.css"
 
 import {
     Box,
@@ -16,6 +17,7 @@ import DynamicTable from "@/components/shares/table/DynamicTable";
 import TitleWrapper from "@/components/shares/TitleWrapper";
 import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
+import Link from "next/link";
 
 type Product = {
     id: number;
@@ -250,6 +252,14 @@ export default function ListPrices() {
             align: "center",
             headerAlign: "center",
             renderCell: (params: any) => formatPrice(params.value),
+        },
+        {
+            field: "link",
+            headerName: "عملیات",
+            flex: 1.2,
+            align: "center",
+            headerAlign: "center",
+            renderCell: () => <Link href="/product/11" className={styles.linkDetails}>مشاهده جزئیات</Link>,
         },
     ];
 

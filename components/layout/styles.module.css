@@ -51,8 +51,9 @@
   margin-bottom: 20px;
   }
   .products >a{
-    width: 180px;
-    padding: 10px;
+    width: 280px;
+    padding: 20px;
+    font-size: 20px;
   }
   @media screen and (max-width: 1400px) {
     .hero{
@@ -73,6 +74,11 @@
   }
   .heroWrapper{
     min-height: 650px;
+  }
+  .products >a{
+    width: 180px;
+    padding: 10px;
+    font-size: 16px;
   }
   }
 .ContainedLinkCustom{

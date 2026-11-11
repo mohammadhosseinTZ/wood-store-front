@@ -24,7 +24,7 @@
 .mainImage {
     position: relative;
     width: 100%;
-    aspect-ratio: 1 / 0.85;
+    aspect-ratio: 1 ;
     background: #FCF0DA;
     border-radius: var(--radius--card);
     overflow: hidden;
@@ -32,12 +32,12 @@
 
 .mainImageContent {
     object-fit: contain;
-    padding: 15px;
     transition: transform 0.3s ease;
+    transform: scale(1);
 }
 
 .mainImage:hover .mainImageContent {
-    transform: scale(1.04);
+    /* transform: scale(1.04); */
 }
 
 .thumbnails {

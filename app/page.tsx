@@ -6,9 +6,8 @@ import Articles from "@/features/index/Articles";
 import Banner from "@/features/index/Banner";
 import Cards from "@/features/index/Cards";
 import Categories from "@/components/shares/Categories";
-import ListPrices from "@/features/index/LIstPrices";
 import Products from "@/components/shares/Products";
-
+import ListPrices from "@/features/index/ListPrices";
 
 export default function HomePage() {
 
@@ -83,14 +82,16 @@ export default function HomePage() {
       <Header />
       <HeroPage />
 
-      <div className="container">
+      <div className="container" id="today-price">
         <Cards />
         <ListPrices />
-        <Categories categories={categories} />
+      </div>
+      <Categories categories={categories} bgVisible={true} />
+      <div className="container" id="products">
         <Products products={products} />
       </div>
       <Banner />
-      <div className="container">
+      <div className="container" id="articles">
         <Articles />
       </div>
       <Footer />

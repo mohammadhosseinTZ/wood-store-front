@@ -4,11 +4,12 @@ import styles from "./styles.module.css"
 export default function Item({ item }: {
     item: {
         title: string,
+        linkCategory:string,
         links: { title: string, link: string }[],
     }
 }) {
     return <div className={`${styles.itemWrapper}`}>
-        <Link href={"/"}>{item.title}</Link>
+        <Link href={item.linkCategory}>{item.title}</Link>
 
         {item.links.map((el, i) => {
             return <Link href={el.link} key={i} className={styles.link}>

@@ -52,6 +52,63 @@ const products = [
         unit: "ورق",
         status: "موجود",
     },
+    {
+        id: 7,
+        name: "MDF خام",
+        category: "MDF",
+        price: 1100000,
+        unit: "ورق",
+        status: "موجود",
+    },
+    {
+        id: 8,
+        name: "MDF خام",
+        category: "MDF",
+        price: 1100000,
+        unit: "ورق",
+        status: "موجود",
+    },
+    {
+        id: 9,
+        name: "MDF خام",
+        category: "MDF",
+        price: 1100000,
+        unit: "ورق",
+        status: "موجود",
+    },
+    {
+        id: 10,
+        name: "MDF خام",
+        category: "MDF",
+        price: 1100000,
+        unit: "ورق",
+        status: "موجود",
+    },
+    {
+        id: 11,
+        name: "MDF خام",
+        category: "MDF",
+        price: 1100000,
+        unit: "ورق",
+        status: "موجود",
+    },
+    {
+        id: 12,
+        name: "MDF خام",
+        category: "MDF",
+        price: 1100000,
+        unit: "ورق",
+        status: "موجود",
+    },
+    {
+        id: 13,
+        name: "MDF خام",
+        category: "MDF",
+        price: 1100000,
+        unit: "ورق",
+        status: "موجود",
+    },
+  
 ];
 
 const columns: GridColDef[] = [

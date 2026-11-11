@@ -8,56 +8,62 @@ export default function Content() {
     const items = [
         {
             title: "ورق MDF",
+            linkCategory:"/product-category/22" ,
             links: [
-                { title: "MDF ایرانی", link: "/" },
-                { title: "MDF خارجی", link: "/" },
-                { title: "MDF هایگلاس", link: "/" },
-                { title: "MDF ملامینه", link: "/" },
+                { title: "MDF ایرانی", link: "/product-category/22/11" },
+                { title: "MDF خارجی", link: "/product-category/22/11" },
+                { title: "MDF هایگلاس", link: "/product-category/22/11" },
+                { title: "MDF ملامینه", link: "/product-category/22/11" },
             ],
         },
         {
             title: "نئوپان",
+            linkCategory:"/product-category/22" ,
             links: [
-                { title: "نئوپان خام", link: "/" },
-                { title: "نئوپان ملامینه", link: "/" },
-                { title: "نئوپان روکش‌دار", link: "/" },
-                { title: "نئوپان ضد رطوبت", link: "/" },
+                { title: "نئوپان خام", link: "/product-category/22/11" },
+                { title: "نئوپان ملامینه", link: "/product-category/22/11" },
+                { title: "نئوپان روکش‌دار", link: "/product-category/22/11" },
+                { title: "نئوپان ضد رطوبت", link: "/product-category/22/11" },
             ],
         },
         {
             title: "تخته چندلایی",
+            linkCategory:"/product-category/22" ,
             links: [
-                { title: "پلای‌وود ایرانی", link: "/" },
-                { title: "پلای‌وود خارجی", link: "/" },
-                { title: "تخته چندلایی ضد آب", link: "/" },
-                { title: "تخته چندلایی روسی", link: "/" },
+                { title: "پلای‌وود ایرانی", link: "/product-category/22/11" },
+                { title: "پلای‌وود خارجی", link: "/product-category/22/11" },
+                { title: "تخته چندلایی ضد آب", link: "/product-category/22/11" },
+                { title: "تخته چندلایی روسی", link: "/product-category/22/11" },
             ],
         },
         {
             title: "چوب طبیعی",
+            linkCategory:"/product-category/22" ,
             links: [
-                { title: "چوب روسی", link: "/" },
-                { title: "چوب راش", link: "/" },
-                { title: "چوب گردو", link: "/" },
-                { title: "چوب بلوط", link: "/" },
+                { title: "چوب روسی", link: "/product-category/22/11" },
+                { title: "چوب راش", link: "/product-category/22/11" },
+                { title: "چوب گردو", link: "/product-category/22/11" },
+                { title: "چوب بلوط", link: "/product-category/22/11" },
             ],
         },
         {
             title: "صفحات کابینت",
+            linkCategory:"/product-category/22" ,
             links: [
-                { title: "صفحه کابینت MDF", link: "/" },
-                { title: "صفحه کابینت HPL", link: "/" },
-                { title: "صفحه کابینت ضد آب", link: "/" },
-                { title: "صفحه کابینت طرح سنگ", link: "/" },
+                { title: "صفحه کابینت MDF", link: "/product-category/22/11" },
+                { title: "صفحه کابینت HPL", link: "/product-category/22/11" },
+                { title: "صفحه کابینت ضد آب", link: "/product-category/22/11" },
+                { title: "صفحه کابینت طرح سنگ", link: "/product-category/22/11" },
             ],
         },
         {
             title: "یراق‌آلات و اتصالات",
+            linkCategory:"/product-category/22" ,
             links: [
-                { title: "لولا کابینت", link: "/" },
-                { title: "ریل کشو", link: "/" },
-                { title: "دستگیره کابینت", link: "/" },
-                { title: "پیچ و اتصالات چوب", link: "/" },
+                { title: "لولا کابینت", link: "/product-category/22/11" },
+                { title: "ریل کشو", link: "/product-category/22/11" },
+                { title: "دستگیره کابینت", link: "/product-category/22/11" },
+                { title: "پیچ و اتصالات چوب", link: "/product-category/22/11" },
             ],
         },
     ];
@@ -68,7 +74,7 @@ export default function Content() {
             return <Item key={i} item={el} />
         })}
             <div className={styles.seeMore}>
-                <Link href={"/"}>مشاهده بیشتر</Link>
+                <Link href={"/product-category"}>مشاهده بیشتر</Link>
                 <span className="material-symbols-rounded">
                     arrow_back
                 </span>
